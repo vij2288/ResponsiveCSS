@@ -1,0 +1,42 @@
+body {
+	background-color: DarkKhaki;
+}
+
+.frame {
+	background-color: DarkRed;
+	height: auto;
+	width: auto;
+	border-radius: 12px;
+	position: fixed;
+	top: 40%;
+	left: 42.5%;
+	padding: 10px 25px 25px 25px;
+}
+
+.Screen {
+	background-color: DarkSlateGray;
+	width: 150px;
+}
+
+.Screen input {
+	width: 145px; position : relative;
+	left: 2px;
+	top: 2px;
+	height: 25px;
+	color: black;
+	background-color: DarkSeaGreen;
+	font-size: 20px;
+	text-align: right;
+	position: relative;
+}
+
+.keypad{
+	position:relative;
+	top:10px;
+}
+
+.button1{
+	width:35px;
+	height:30px;
+	background-color:Gainsboro;
+}

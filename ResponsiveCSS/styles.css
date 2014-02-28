@@ -1,0 +1,247 @@
+/*
+* Author : Vijith Venkatesh
+* Andrew ID: VVANKATE
+*
+* CSS Style sheet for the Oakland Book Club
+*/
+
+/* This is the media query to style when the viewport's width is small*/
+@media screen and (max-width: 1024px) {
+	nav ul {
+		list-style-type: none;
+		min-width: 700px;
+		max-width: 1000px;
+		height: 35px;
+		background: linear-gradient(180deg, rgb(34, 34, 34), rgb(60, 60, 60));
+		border: 1px none;
+		background: linear-gradient(180deg, rgb(34, 34, 34), rgb(60, 60, 60));
+		border: 1px none;
+		border-radius: 10px;
+	}
+	nav li {
+		vertical-align: middle;
+		margin-top: 10px;
+		margin-left: -25px;
+		padding: 0px 45px 30px 0px;
+		display: inline;
+		float: left;
+		display: inline;
+	}
+	main {
+		min-width: 700px;
+		max-width: 1000px;
+		margin-bottom: 20px;
+		padding: 20px;
+		border-radius: 10px;
+		background-color: rgb(255, 255, 255);
+	}
+}
+
+/* this is the media query to style when the viewport's width is large*/
+@media screen and (min-width: 1025px) {
+	nav ul {
+		list-style-type: none;
+		width: 240px;
+		height: 190px;
+		float: left;
+		margin-left: -5px;
+		margin-top: 1px;
+		border: 1px none;
+		border-radius: 15px;
+		background: linear-gradient(to right, rgb(34, 34, 34), rgb(60, 60, 60));
+	}
+	nav li {
+		border-collapse: collapse;
+		margin-left: -20px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		height: 28px;
+	}
+	main {
+		background-color: rgb(255, 255, 255);
+		min-width: 700px;
+		max-width: 1000px;
+		margin-left: 280px;
+		margin-bottom: 20px;
+		padding: 20px;
+		border-radius: 10px;
+	}
+}
+
+nav a {
+	color: rgb(153, 153, 153);
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: rgb(255, 255, 255);
+}
+
+/* Universal rule */
+body {
+	font-size: 14px;
+	font-family: "Helvetics", "Arial", "sans-serif";
+	color: rgb(0, 0, 0);
+	background-color: rgb(60, 60, 60);
+}
+
+/* setting H2's style*/
+main h2 {
+	font-size: 2em;
+	color: rgb(185, 85, 25);
+}
+
+/* setting H1's style*/
+main h1 {
+	font-size: 3em;
+	margin-left: 5px;
+	margin-top: 2px;
+	margin-bottom: 8px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+}
+
+/* styling the links in main */
+main a {
+	color: rgb(0, 0, 255);
+	text-decoration: none;
+}
+
+/* styling the links when hovered */
+main a:hover {
+	text-decoration: underline;
+}
+
+/* inserting the dog's pic */
+.reading-dog {
+	height: 216px;
+	width: 324px;
+	background-image: url("reading_dog.jpg");
+	background-repeat: no-repeat;
+	border-radius: 10px;
+	margin-top: 1px;
+	margin-left: 5px;
+}
+
+/* Italisizing the quote */
+blockquote {
+	font-style: italic;
+	text-align: justify;
+	width: 500px;
+}
+
+/* styling the table */
+#section-whatreading table,tr,td,th {
+	table-layout: auto;
+	border: 1px solid rgb(34, 34, 34);
+	border-collapse: collapse;
+	padding: 10px;
+}
+
+th {
+	background: linear-gradient(180deg, rgb(60, 60, 60), rgb(115, 115, 115));
+	color: rgb(255, 255, 255);
+	text-align: left;
+}
+
+.table-header-title,.table-header-author {
+	width: 160px;
+}
+
+.table-header-isbn,.table-header-year {
+	width: 125px;
+}
+
+td:nth-child(1),td:nth-child(2) {
+	text-align: left;
+}
+
+td:nth-child(3),td:nth-child(4) {
+	text-align: right;
+}
+
+tr:nth-child(odd) {
+	background-color: rgb(238, 238, 238);
+}
+
+tr:nth-child(even) {
+	background-color: rgb(255, 255, 255);
+}
+
+/* justifying the text in the genre's section */
+#section-favoritegenres {
+	width: 480px;
+}
+
+/* justifying the text in the about us section*/
+#section-about {
+	width: 500px;
+	text-align: justify;
+}
+
+/* justifying the text in Contact section */
+#section-contact {
+	text-align: justify;
+}
+
+/* styling the fieldset */
+fieldset {
+	border-radius: 12px;
+	border: 1px solid rgb(153, 153, 153);
+	padding: 15px;
+}
+
+/* styling the asterisk */
+.required {
+	color: rgb(255, 0, 0);
+}
+
+/* formatting the form */
+form div {
+	padding: 1px;
+}
+
+/* formatting the input fields */
+input[type="submit"],input[type="reset"] {
+	background-color: rgb(60, 60, 60);
+	color: rgb(255, 255, 255);
+	height: 32px;
+	border-radius: 5px;
+}
+
+/* formatting the email & name field */
+input[type="email"],#input-name {
+	position: relative;
+	left: 215px;
+	outline: none;
+	width: 140px;
+	border-top: solid 1px #8e8e8e;
+	border-right: solid 1px #d1d1d1;
+	border-left: solid 1px #d1d1d1;
+	border-bottom: solid 1px #e4e4e4;
+	border-radius: 1px;
+}
+
+/* styling the phone field */
+#input-phone {
+	position: relative;
+	left: 161px;
+	outline: none;
+	width: 140px;
+	border-top: solid 1px #8e8e8e;
+	border-right: solid 1px #d1d1d1;
+	border-left: solid 1px #d1d1d1;
+	border-bottom: solid 1px #e4e4e4;
+	border-radius: 1px;
+	border-top: solid 1px #8e8e8e;
+}
+
+/* styling the select */
+select {
+	position: relative;
+	left: 85px;
+}
+
+footer {
+	color: rgb(255, 255, 255);
+	text-align: center;
+}

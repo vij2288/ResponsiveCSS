@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Vij's Calculator</title>
+<link rel=stylesheet type="text/css" href="styl.css">
+</head>
+<body onLoad="ld();">
+	<br>
+	<h1 align="center">Web Application development</h1>
+	<h2 align="center">Assignment 1</h2>
+	<h3 align="center">A simple Calculator</h3>
+	<h4 align="center">-Vijith Venkatesh(VVANKATE)</h4>
+	<br>
+	<div class="frame">
+		<div class="Screen">
+			<input type="text" readonly size="20" id="res">
+		</div>
+		<div class="keypad">
+			<div class="sec">
+				<input type="button" class ="button1" value="7" onClick='attach("7")'> <input
+					type="button" class ="button1" value="8" onClick='attach("8")'> <input
+					type="button" class ="button1" value="9" onClick='attach("9")'> <input
+					type="button" class ="button1" value="+" onClick='comp("+")'>
+			</div>
+			<div class="sec">
+				<input type="button" class ="button1" value="4" onClick='attach("4")'> <input
+					type="button" class ="button1" value="5" onClick='attach("5")'> <input
+					type="button" class ="button1" value="6" onClick='attach("6")'> <input
+					type="button" class ="button1" value="-" onClick='comp("-")'>
+			</div>
+			<div class="sec">
+				<input type="button" class ="button1" value="1" onClick='attach("1")'> <input
+					type="button" class ="button1" value="2" onClick='attach("2")'> <input
+					type="button" class ="button1" value="3" onClick='attach("3")'> <input
+					type="button" class ="button1" value="*" onClick='comp("*")'>
+			</div>
+			<div class="sec">
+				<input type="button" class ="button1" style="visibility:hidden">
+				<input type="button" class ="button1" value="0" onClick='attach("0")'> <input
+					type="button" class ="button1" value="=" onClick='find()'> <input
+					type="button" class ="button1" value="/" onClick='comp("/")'>
+			</div>
+
+		</div>
+
+
+
+	</div>
+	<script src='compute.js'></script>
+</body>
+</html>
